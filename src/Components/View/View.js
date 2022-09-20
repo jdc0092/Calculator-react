@@ -16,7 +16,7 @@ function View() {
     }
 
 
-    const calResult = (val) => {
+    const calResult = () => {
 
         if (numeric) {
             setNumeric(evaluate(numeric))
@@ -62,9 +62,10 @@ function View() {
                             <Buton numbers={insertNumbers}>*</Buton>
                         </div>
                         <div className='calculator-fila'>
-                            <Buton numbers={() => calResult()}>=</Buton>
-                            <Buton numbers={insertNumbers}>0</Buton>
                             <Buton numbers={insertNumbers}>.</Buton>
+                            <Buton numbers={insertNumbers}>0</Buton>
+                            <Buton numbers={() => calResult()}>=</Buton>
+                            <Buton numbers={insertNumbers}>/</Buton>
                             {/* <Buton numbers={insertNumbers}>/</Buton> */}
                         </div>
                         <div className='calculator-fila'>

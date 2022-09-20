@@ -6,7 +6,7 @@ function PantallaNumeric({ numeric }) {
     return (
         <React.Fragment>
             <div className='calculator-view'>
-                {numeric.toLocaleString('es-Us')}
+                {numeric}
             </div>
         </React.Fragment>
     )
